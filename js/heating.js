@@ -5,8 +5,8 @@ const list = [
     text: '簡單幾步驟<br/>輕鬆加熱好方便!',
     color: '#fe6d6a',
     panelColor: 'pink',
-    btnImgUrl: './img/heating/video_pink.png',
-    imgUrl: './img/heating/panel__img__1.png',
+    btnImgUrl: './image/heating/video_pink.webp',
+    imgUrl: './image/heating/panel__img__1.webp',
     videoUrl: 'https://www.facebook.com/share/r/18YLgbfVwu/?mibextid=wwXIfr',
   },
   {
@@ -15,8 +15,8 @@ const list = [
     text: '沒有電鍋沒關係<br/>熱水也能加熱!',
     color: '#257FBD',
     panelColor: 'blue',
-    btnImgUrl: './img/heating/video_blue.png',
-    imgUrl: './img/heating/panel__img__2.png',
+    btnImgUrl: './image/heating/video_blue.webp',
+    imgUrl: './image/heating/panel__img__2.webp',
     videoUrl: 'https://www.facebook.com/share/r/1DYQyetbwR/?mibextid=wwXIfr',
   },
   {
@@ -25,8 +25,8 @@ const list = [
     text: '最後安全小技巧<br/>一起來看看!',
     color: '#379A5A',
     panelColor: 'green',
-    btnImgUrl: './img/heating/video_green.png',
-    imgUrl: './img/heating/icon_people--safe.png',
+    btnImgUrl: './image/heating/video_green.webp',
+    imgUrl: './image/heating/icon_people--safe.webp',
     videoUrl: 'https://www.facebook.com/share/r/1DTjkN24FN/?mibextid=wwXIfr',
   }
 ]
