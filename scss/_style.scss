@@ -1,0 +1,120 @@
+@use "./mixin" as *;
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 768px;
+}
+body {
+  font-size: 10px;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Klee One",
+    "Noto Sans TC",
+    Arial,
+    sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.w-100 {
+  width: 100%;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+
+// flex
+.flex {
+  @include flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-start {
+  @include flex;
+  justify-content: flex-start !important;
+}
+.flex-between {
+  @include flex;
+  justify-content: space-between !important;
+}
+.flex-center {
+  @include flex;
+  justify-content: center !important;
+}
+.flex-end {
+  @include flex;
+  justify-content: flex-end !important;
+}
+
+// header
+.header {
+  position: relative;
+  &__bg {
+      width: 100%;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    max-width: 768px;
+    width: 90%;
+    left: 5%;
+    @media(max-width: 440px){ 
+      width: 85%;
+      left: 15%;
+    }
+    &--title {
+      width: 50%;
+      padding-bottom: 5px;
+    }
+    &--people {
+      width: 40%;
+      height: auto;
+    }
+  }
+}
+.footer {
+  width: 100%;
+  position: relative;
+}
+
+// btn
+.radius-99 {
+  border-radius: 99px;
+}
+.btn--back {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    padding: 0px 8px;
+    border-radius: 99px;
+    color: #6A2D1B;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f3dfcf;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+// content 
+.content {
+  padding: 8px 16px;
+}

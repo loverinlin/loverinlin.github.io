@@ -1,0 +1,115 @@
+// color set
+$color-pink-1: #fee2df;
+$color-pink-2: #fe7472;
+$color-pink-3: #fc6a6a;
+$color-pink-4: #560c08;
+$color-blue-1: #d3ecff;
+$color-blue-2: #399add;
+$color-blue-3: #2f7eb2;
+$color-blue-4: #003a77;
+$color-green-1: #dbf3d9;
+$color-green-2: #349b52;
+$color-green-3: #389b5b;
+$color-green-4: #01582e;
+$color-white: #ffffff;
+
+// 主題
+.pink {
+  --bg-color: #{$color-pink-1};
+  --text-color: #{$color-pink-2};
+  --btn-color: #{$color-pink-3};
+  --title-color: #{$color-pink-4};
+}
+
+.blue {
+  --bg-color: #{$color-blue-1};
+  --text-color: #{$color-blue-2};
+  --btn-color: #{$color-blue-3};
+  --title-color: #{$color-blue-4};
+}
+
+.green {
+  --bg-color: #{$color-green-1};
+  --text-color: #{$color-green-2};
+  --btn-color: #{$color-green-3};
+  --title-color: #{$color-green-4};
+}
+// color
+.bg-pink {
+  background-color: $color-pink-1;
+}
+.bg-pink-light {
+  background-color: $color-pink-2;
+}
+.bg-blue {
+  background-color: $color-blue-1;
+}
+.bg-blue-light {
+  background-color: $color-blue-2;
+}
+.bg-green {
+  background-color: $color-green-1;
+}
+.bg-green-light {
+  background-color: $color-green-2;
+}
+.color-pink {
+  color: $color-pink-1;
+}
+.color-pink-light {
+  color: $color-pink-2;
+}
+.color-blue {
+  color: $color-blue-1;
+}
+.color-blue-light {
+  color: $color-blue-2;
+}
+.color-green {
+  color: $color-green-1;
+}
+.color-green-light {
+  color: $color-green-2;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin text-stroke($size, $color) {
+  text-shadow:
+    (-$size) (-$size) 0 $color,
+    0 (-$size) 0 $color,
+    $size (-$size) 0 $color,
+    (-$size) 0 0 $color,
+    $size 0 0 $color,
+    (-$size) $size 0 $color,
+    0 $size 0 $color,
+    $size $size 0 $color;
+}
