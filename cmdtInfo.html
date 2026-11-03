@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旺福</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="btn--back" onclick="window.history.back()">
+      <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.5 4.5L7 11L13.5 17.5" stroke="#6A2D1B" stroke-width="3.6" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      返回
+    </div>
+    <img src="./image/cmdtInfo/header.webp">
+  </div>
+  <div id="content" class="content cmdtInfo">
+    <div class="cmdtInfo__row">
+      <div id="cmdtImg" class="cmdtInfo__block" style="background-color: unset;"></div>
+      <div id="once" class="cmdtInfo__block orange"></div>
+    </div>
+    <div id="dris" class="cmdtInfo__block blue"></div>
+    <div class="hintBlock">
+      <div class="hintBlock__title">小提醒</div>
+      <ul id="hintList" class="hintBlock__list"></ul>
+
+    </div>
+  </div>
+  <div class="footer">
+    <!-- <img src="./image/cmdtInfo/footer.webp"> -->
+  </div>
+  <script type="module" src="./js/cmdtInfo.js"></script>
+</body>
+
+</html>

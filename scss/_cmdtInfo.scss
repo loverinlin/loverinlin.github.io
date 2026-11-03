@@ -1,0 +1,121 @@
+@use "./mixin" as *;
+
+.cmdtInfo {
+  display: grid;
+  gap: 8px;
+  &__row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    @media(max-width: 576px){ 
+      grid-template-columns: 1fr;
+    }
+  }
+  &__block {
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    display: grid;
+    gap: 8px;
+    grid-template-rows: 50px 1fr;
+    &--title {
+      background-color: var(--btn-color);
+      color: $color-white;
+      padding: 4px 12px;
+      border-radius: 99px;
+      font-size: responsiveSize(22, 16);
+      font-weight: bold;
+      margin: 8px 0 0 8px;
+      align-content: center;
+    }
+    &--subTitle {
+      font-size: responsiveSize(16, 14);
+      font-weight: 400;
+    }
+    &--img {
+      padding: 8px;
+    }
+  }
+  &__DRIS {
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    padding: 8px;
+    display: grid;
+    gap: 8px;
+    &--row {
+      @include flex-start;
+    }
+    &--title {
+      background-color: var(--text-color);
+      color: $color-white;
+      padding: 4px 8px;
+      border-radius: 99px;
+    }
+    &--content {
+      display: flex;
+      flex-direction: column;
+      background-color: $color-white;
+      border-radius: 20px;
+      padding: 8px;
+    }
+  }
+  .progress {
+    width: 100%;
+    height: 20px;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    overflow: hidden;
+    &__bar {
+      width: 0;
+      height: 100%;
+      background-color: #2f7eb2;
+      border-radius: inherit;
+      transition: width 0.3s ease;
+    }
+  }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 8px;
+    th,
+    td {
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+      &:not(:last-child) {
+        border-right: 1px solid #ddd;
+      }
+    }
+    th {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  .hintBlock {
+    border-radius: 20px;
+    border: 2px dashed $color-orange-2;
+    position: relative;
+    margin-top: 12px;
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 4px 8px;
+      background-color: $color-orange-2;
+      color: $color-orange-4;
+      border-radius: 99px;
+      position: absolute;
+      top: -20px;
+      left: 8px;
+      transform: rotate(-4deg);
+    }
+    &__list {
+      display: block;
+      padding: 20px 20px 20px 40px;
+      list-style: disc outside;
+    }
+    &__item {
+      font-size: 16px;
+    }
+  }
+}

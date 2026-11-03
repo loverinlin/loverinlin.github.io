@@ -11,6 +11,10 @@ $color-green-1: #dbf3d9;
 $color-green-2: #349b52;
 $color-green-3: #389b5b;
 $color-green-4: #01582e;
+$color-orange-1: #fdeed1;
+$color-orange-2: #f5802a;
+$color-orange-3: #ef6500;
+$color-orange-4: #5e2d03;
 $color-white: #ffffff;
 
 // 主題
@@ -34,6 +38,14 @@ $color-white: #ffffff;
   --btn-color: #{$color-green-3};
   --title-color: #{$color-green-4};
 }
+
+.orange {
+  --bg-color: #{$color-orange-1};
+  --text-color: #{$color-orange-2};
+  --btn-color: #{$color-orange-3};
+  --title-color: #{$color-orange-4};
+}
+
 // color
 .bg-pink {
   background-color: $color-pink-1;
@@ -112,4 +124,8 @@ $color-white: #ffffff;
     (-$size) $size 0 $color,
     0 $size 0 $color,
     $size $size 0 $color;
+}
+
+@function responsiveSize($maxSize, $minSize) {
+   @return clamp(#{$minSize}px, calc(#{$maxSize} / 768 * 100vw), #{$maxSize}px);
 }
