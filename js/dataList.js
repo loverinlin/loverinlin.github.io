@@ -1,9 +1,8 @@
 export const tabList = [
   { tab: '0', title: '全部', color: 'purple' },
-  { tab: '1', title: '方便均衡', sTitle: '', color: 'pink' },
-  { tab: '2', title: '純主菜類', sTitle: '(蛋白質)', color: 'blue' },
-  { tab: '3', title: '純主食類', sTitle: '(全榖雜糧)', color: 'orange' },
-  { tab: '4', title: '冷凍蔬菜類', color: 'green' },
+  { tab: '2', title: '主菜類', color: 'blue' },
+  { tab: '3', title: '主食類', color: 'orange' },
+  { tab: '1', title: '蔬菜類', color: 'green' },
 ]
 
 export const nutritionList = [
@@ -653,7 +652,7 @@ export const cmdtList = [
     hintList: [
       '榮獲農業部銀髮有善食品標章',
       '符合 IDDSI 4 ，適合難以咀嚼食物的人，質地細滑，不需咀嚼',
-      '鈉含量提醒：每份鈉含量為 448 毫克，蛋白質達 8.5 克、膳食纖維 3.7 克'
+      '每份鈉含量為 388 毫克，含蛋白質與纖維。'
     ],
   },
   {
@@ -975,7 +974,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '4',
+    tab: '1',
     cmdtName: '蒜香青江菜',
     imgUrl: './image/cmdt/chimei_6.webp',
     onceCnt: '100公克',
@@ -1054,7 +1053,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '4',
+    tab: '1',
     cmdtName: '蒜香小白菜',
     imgUrl: './image/cmdt/chimei_7.webp',
     onceCnt: '100公克',
@@ -1133,7 +1132,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '4',
+    tab: '1',
     cmdtName: '香菇玉米筍',
     imgUrl: './image/cmdt/chimei_8.webp',
     onceCnt: '100公克',
@@ -1213,7 +1212,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '4',
+    tab: '1',
     cmdtName: '白菜炒木耳',
     imgUrl: './image/cmdt/chimei_9.webp',
     onceCnt: '100公克',
@@ -1292,7 +1291,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '4',
+    tab: '1',
     cmdtName: '雙色花椰菜',
     imgUrl: './image/cmdt/chimei_10.webp',
     onceCnt: '100公克',
@@ -1372,7 +1371,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '4',
+    tab: '1',
     cmdtName: '薑香炒菠菜',
     imgUrl: './image/cmdt/chimei_11.webp',
     onceCnt: '100公克',
@@ -1688,7 +1687,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '4',
+    tab: '1',
     cmdtName: '蔬燴什錦',
     imgUrl: './image/cmdt/vewong_4.webp',
     onceCnt: '200公克',
@@ -2083,7 +2082,7 @@ export const cmdtList = [
     ],
   },
   {
-    tab: '1',
+    tab: '3',
     cmdtName: '香菇藜麥粥',
     imgUrl: './image/cmdt/vewong_9.webp',
     onceCnt: '300公克',

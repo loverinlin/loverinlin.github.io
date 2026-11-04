@@ -1,5 +1,5 @@
 import { tabList, cmdtList } from './dataList.js'
-
+console.log(tabList)
 const content = document.querySelector('#tab__content');
 const getSessionTab = sessionStorage.getItem('tabId')
 const getTabData = (item, type) => {

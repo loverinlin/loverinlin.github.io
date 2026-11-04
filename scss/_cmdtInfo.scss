@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    @media(max-width: 576px){ 
+    @media(max-width: 768px){ 
       grid-template-columns: 1fr;
     }
   }
@@ -49,10 +49,12 @@
       color: $color-white;
       padding: 4px 8px;
       border-radius: 99px;
+      margin-bottom: 25px;
     }
     &--content {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 4px;
       background-color: $color-white;
       border-radius: 20px;
       padding: 8px;
@@ -93,29 +95,28 @@
     }
   }
   .hintBlock {
-    border-radius: 20px;
-    border: 2px dashed $color-orange-2;
     position: relative;
-    margin-top: 12px;
+    margin-top: 24px;
+    display: flex;
+
     &__title {
-      font-size: 18px;
-      font-weight: bold;
-      padding: 4px 8px;
-      background-color: $color-orange-2;
-      color: $color-orange-4;
-      border-radius: 99px;
       position: absolute;
-      top: -20px;
-      left: 8px;
-      transform: rotate(-4deg);
+      width: 135px;
+      top: -35px;
+      left: -10px;
     }
     &__list {
       display: block;
       padding: 20px 20px 20px 40px;
       list-style: disc outside;
+      border: 2px dashed $color-orange-2;
+      border-radius: 20px;
     }
     &__item {
-      font-size: 16px;
+      font-size: 20px;
+    }
+    &__img {
+      width: 200px;
     }
   }
 }

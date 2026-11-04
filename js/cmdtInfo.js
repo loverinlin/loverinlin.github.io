@@ -33,7 +33,7 @@ const onceData = (data) => {
   `
 }
 
-const drisData = (data) => {
+const drisData = (data, imgUrl) => {
   const contentBlock = document.createElement('div')
   nutritionList.map(item => {
     const value = data[item.value]
@@ -77,20 +77,40 @@ drisContent.innerHTML += `
   </div>
   <div class="cmdtInfo__row" style="background-color: #ffffff; padding: 8px 0;">
     <div class="blue cmdtInfo__DRIS">
-      <div class="cmdtInfo__DRIS--row"><span class="cmdtInfo__DRIS--title">${cmdtData.m51.title}</span></div>
-      <div class="cmdtInfo__DRIS--content">${drisData(cmdtData.m51)}</div>
+      <div class="cmdtInfo__DRIS--content">
+        <div class="cmdtInfo__DRIS--img">
+          <div class="cmdtInfo__DRIS--title">${cmdtData.m51.title}</div>
+          <img src='./image/cmdtInfo/m51.webp' alt="${cmdtData.m51.title}">
+        </div>
+        <div class="cmdtInfo__DRIS--data">${drisData(cmdtData.m51)}</div>
+      </div>
     </div>
     <div class="pink cmdtInfo__DRIS">
-      <div class="cmdtInfo__DRIS--row"><span class="cmdtInfo__DRIS--title">${cmdtData.f51.title}</span></div>
-      <div class="cmdtInfo__DRIS--content">${drisData(cmdtData.f51)}</div>
+      <div class="cmdtInfo__DRIS--content">
+        <div class="cmdtInfo__DRIS--img">
+          <div class="cmdtInfo__DRIS--title">${cmdtData.f51.title}</div>
+          <img src='./image/cmdtInfo/f51.webp' alt="${cmdtData.f51.title}">
+        </div>
+        <div class="cmdtInfo__DRIS--data">${drisData(cmdtData.f51)}</div>
+      </div>
     </div>
     <div class="blue cmdtInfo__DRIS">
-      <div class="cmdtInfo__DRIS--row"><span class="cmdtInfo__DRIS--title">${cmdtData.m71.title}</span></div>
-      <div class="cmdtInfo__DRIS--content">${drisData(cmdtData.m71)}</div>
+      <div class="cmdtInfo__DRIS--content">
+        <div class="cmdtInfo__DRIS--img">
+          <div class="cmdtInfo__DRIS--title">${cmdtData.m71.title}</div>
+          <img src='./image/cmdtInfo/m71.webp' alt="${cmdtData.m71.title}">
+        </div>
+        <div class="cmdtInfo__DRIS--data">${drisData(cmdtData.m71)}</div>
+      </div>
     </div>
     <div class="pink cmdtInfo__DRIS">
-      <div class="cmdtInfo__DRIS--row"><span class="cmdtInfo__DRIS--title">${cmdtData.f71.title}</span></div>
-      <div class="cmdtInfo__DRIS--content">${drisData(cmdtData.f71)}</div>
+      <div class="cmdtInfo__DRIS--content">
+        <div class="cmdtInfo__DRIS--img">
+          <div class="cmdtInfo__DRIS--title">${cmdtData.f71.title}</div>
+          <img src='./image/cmdtInfo/f71.webp' alt="${cmdtData.f71.title}">
+        </div>
+        <div class="cmdtInfo__DRIS--data">${drisData(cmdtData.f71)}</div>
+      </div>
     </div>
   </div>
 `

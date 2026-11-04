@@ -25,7 +25,7 @@
   &__row {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: responsiveSize(10,8);
     @media(max-width: 576px){ 
       grid-template-columns: repeat(3, 1fr);
@@ -61,6 +61,7 @@
   padding: 4px;
   background-color: $color-white;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .1);
+  width: 100%;
   height: -webkit-fill-available;
   text-align: center;
   position: relative;
@@ -89,8 +90,8 @@
     border-radius: 99px;
     position: relative;
     font-family: "GenSen-M", sans-serif;
-    background-color: var(--btn-color);
-    color: $color-white;
+    background-color: var(--title-color);
+    color: var(--bg-color);
     font-size: responsiveSize(20,14);
     padding: 8px 12px;
     position: absolute;
@@ -102,7 +103,6 @@
     color: var(--title-color);
     font-size: responsiveSize(24,20);
     font-family: "KiwiMaru-M", sans-serif;
-    font-weight: bolder;
   }
   &__text {
     font-size: responsiveSize(18,14);
@@ -117,8 +117,8 @@
     border-radius: 99px;
     position: relative;
     font-family: "GenSen-M", sans-serif;
-    background-color: var(--btn-color);
-    color: $color-white;
+    background-color: var(--bg-color);
+    color: var(--title-color);
     font-size: responsiveSize(20,14);
     padding: 8px 12px;
     margin-top: 4px;

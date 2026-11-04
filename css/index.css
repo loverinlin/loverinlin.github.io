@@ -285,7 +285,7 @@ img {
 .tab__row {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(8px, 10 / 768 * 100vw, 10px);
 }
 @media (max-width: 576px) {
@@ -328,6 +328,7 @@ img {
   padding: 4px;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
   height: -webkit-fill-available;
   text-align: center;
   position: relative;
@@ -365,8 +366,8 @@ img {
   border-radius: 99px;
   position: relative;
   font-family: "GenSen-M", sans-serif;
-  background-color: var(--btn-color);
-  color: #ffffff;
+  background-color: var(--title-color);
+  color: var(--bg-color);
   font-size: clamp(14px, 20 / 768 * 100vw, 20px);
   padding: 8px 12px;
   position: absolute;
@@ -378,7 +379,6 @@ img {
   color: var(--title-color);
   font-size: clamp(20px, 24 / 768 * 100vw, 24px);
   font-family: "KiwiMaru-M", sans-serif;
-  font-weight: bolder;
 }
 .cmdtItem__text {
   font-size: clamp(14px, 18 / 768 * 100vw, 18px);
@@ -395,8 +395,8 @@ img {
   border-radius: 99px;
   position: relative;
   font-family: "GenSen-M", sans-serif;
-  background-color: var(--btn-color);
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--title-color);
   font-size: clamp(14px, 20 / 768 * 100vw, 20px);
   padding: 8px 12px;
   margin-top: 4px;
@@ -589,7 +589,7 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .cmdtInfo__row {
     grid-template-columns: 1fr;
   }
@@ -609,6 +609,7 @@ img {
   font-size: clamp(16px, 22 / 768 * 100vw, 22px);
   font-weight: bold;
   margin: 8px 0 0 8px;
+  align-content: center;
 }
 .cmdtInfo__block--subTitle {
   font-size: clamp(14px, 16 / 768 * 100vw, 16px);
@@ -634,10 +635,12 @@ img {
   color: #ffffff;
   padding: 4px 8px;
   border-radius: 99px;
+  margin-bottom: 25px;
 }
 .cmdtInfo__DRIS--content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 4px;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 8px;
@@ -678,28 +681,26 @@ img {
   border-bottom: 1px solid #ddd;
 }
 .cmdtInfo .hintBlock {
-  border-radius: 20px;
-  border: 2px dashed #f5802a;
   position: relative;
-  margin-top: 12px;
+  margin-top: 24px;
+  display: flex;
 }
 .cmdtInfo .hintBlock__title {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 4px 8px;
-  background-color: #f5802a;
-  color: #5e2d03;
-  border-radius: 99px;
   position: absolute;
-  top: -20px;
-  left: 8px;
-  transform: rotate(-4deg);
+  width: 135px;
+  top: -35px;
+  left: -10px;
 }
 .cmdtInfo .hintBlock__list {
   display: block;
   padding: 20px 20px 20px 40px;
   list-style: disc outside;
+  border: 2px dashed #f5802a;
+  border-radius: 20px;
 }
 .cmdtInfo .hintBlock__item {
-  font-size: 16px;
+  font-size: 20px;
+}
+.cmdtInfo .hintBlock__img {
+  width: 200px;
 }
