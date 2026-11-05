@@ -72,7 +72,7 @@ drisContent.innerHTML += `
   <div class="cmdtInfo__DRIS--row">
     <div class="cmdtInfo__block--title">
       各年齡層DRIS比
-      <span class="cmdtInfo__block--subTitle">(依每份${cmdtData.onceCnt}計算)</span>
+      <span class="cmdtInfo__block--subTitle">(以每日1/3計算)</span>
     </div>
   </div>
   <div class="cmdtInfo__row" style="background-color: #ffffff; padding: 8px 0;">
